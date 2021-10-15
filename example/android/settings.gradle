@@ -1,0 +1,6 @@
+rootProject.name = 'Amap3dExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':reactnativeamap3d'
+project(':reactnativeamap3d').projectDir = new File(rootProject.projectDir, '../../android')
